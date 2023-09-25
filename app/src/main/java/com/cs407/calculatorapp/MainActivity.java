@@ -52,15 +52,15 @@ public class MainActivity extends AppCompatActivity {
         EditText firstNum = (EditText) findViewById((R.id.firstNumField));
         EditText secondNum = (EditText) findViewById(R.id.secondNumField);
 
-        int n1 = Integer.parseInt(firstNum.getText().toString());
-        int n2 = Integer.parseInt(secondNum.getText().toString());
+        float n1 = Integer.parseInt(firstNum.getText().toString());
+        float n2 = Integer.parseInt(secondNum.getText().toString());
 
         String str = "";
 
         if (n2 == 0) {
             str = "ERROR! Cannot divide by 0";
         } else {
-            int res = n1/n2;
+            double res = n1/n2;
             str = "" + res;
         }
         goToActivity(str);
